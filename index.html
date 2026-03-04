@@ -2,701 +2,254 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>الأستاذ مشري إسماعيل | محامٍ لدى مجلس تبسة - 0772 89 06 14</title>
-    
-    <!-- SEO Meta -->
-    <meta name="description" content="مكتب المحامي الأستاذ مشري إسماعيل في حي السلم رقم 2، تبسة. رقم الهاتف: 0772 89 06 14. خبرة في 69 ولاية جزائرية. استشارات قانونية في القانون المدني، الجنائي، الأسرة، العقارات، العمل، التجاري.">
-    <meta name="keywords" content="محامي تبسة, رقم محامي تبسة, ارقام المحامين تبسة, أفضل محامي تبسة, محامي محكمة تبسة, مكتب محاماة تبسة, telephone avocat tebessa, phone lawyer tebessa">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="ضع_كود_التحقق_هنا">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="الأستاذ مشري إسماعيل | محامٍ لدى مجلس تبسة">
-    <meta property="og:description" content="مكتب محاماة في حي السلم رقم 2، تبسة. رقم: 0772 89 06 14">
-    <meta property="og:image" content="https://maitre-mecheri-ismail.vercel.app/logo.png">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأستاذ مشري إسماعيل | محامٍ تبسة</title>
+    <meta name="description" content="محامي تبسة الأستاذ مشري إسماعيل. رقم الهاتف: 0772 89 06 14. حي السلم رقم 2.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+        body{background:#f0f0f0}
+        .navy{background:#1e3a5f;color:#c9a227}
+        .gold{color:#c9a227}
         
-        :root {
-            --navy: #1e3a5f;
-            --navy-dark: #0f1f33;
-            --gold: #c9a227;
-            --gold-light: #e0c158;
-            --white: #ffffff;
-            --gray: #f5f5f5;
-        }
-
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: var(--white);
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* توب بار */
-        .top-bar {
-            background: var(--navy-dark);
-            color: var(--gold);
-            padding: 8px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 13px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1001;
-        }
-
-        /* ناف بار */
-        nav {
-            background: var(--navy);
-            padding: 12px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 36px;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
+        /* شريط علوي */
+        .top{position:fixed;top:0;left:0;right:0;height:35px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;font-size:12px;z-index:1001}
         
-        .logo-area { 
-            display: flex; 
-            align-items: center; 
-            gap: 10px; 
-            color: white; 
-            text-decoration: none; 
-        }
+        /* تنقل */
+        .nav{position:fixed;top:35px;left:0;right:0;height:55px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.2)}
+        .logo{display:flex;align-items:center;gap:10px;color:white;text-decoration:none}
+        .logo img{width:40px;height:40px;border-radius:50%;border:2px solid #c9a227}
+        .menu{background:none;border:none;color:white;font-size:20px}
         
-        .logo-area img { 
-            width: 40px; 
-            height: 40px; 
-            border: 2px solid var(--gold); 
-            border-radius: 50%;
-            object-fit: cover;
-        }
+        /* المحتوى الرئيسي */
+        .main{margin-top:90px}
         
-        .logo-text {
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .menu-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 22px;
-            cursor: pointer;
-        }
-
-        .nav-links {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 100%;
-            background: var(--navy);
-            flex-direction: column;
-            padding: 15px;
-        }
-        
-        .nav-links.active {
-            display: flex;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            font-size: 14px;
-        }
-
         /* قسم البطل */
-        .hero {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-            color: white;
-            padding: 100px 5% 40px;
-            min-height: auto;
-        }
+        .hero{background:linear-gradient(135deg,#0f1f33 0%,#1e3a5f 100%);color:white;padding:25px 15px}
+        .badge{display:inline-block;background:rgba(201,162,39,0.2);border:1px solid #c9a227;color:#c9a227;padding:5px 12px;border-radius:15px;font-size:11px;margin-bottom:15px}
+        h1{font-size:24px;margin-bottom:8px;line-height:1.3}
+        h1 span{color:#c9a227;font-size:16px;display:block;margin-top:5px}
+        .phone{font-size:28px;color:#c9a227;font-weight:800;text-decoration:none;display:block;margin:15px 0}
+        .desc{font-size:14px;opacity:0.9;margin-bottom:20px}
         
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .badge { 
-            background: rgba(201, 162, 39, 0.2); 
-            border: 1px solid var(--gold); 
-            color: var(--gold); 
-            padding: 6px 14px; 
-            border-radius: 20px; 
-            font-size: 12px; 
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 {
-            font-family: 'Amiri', serif;
-            font-size: 26px;
-            margin-bottom: 10px;
-            line-height: 1.3;
-        }
+        /* إحصائيات */
+        .stats{display:flex;gap:30px;margin:20px 0}
+        .stat{text-align:center}
+        .stat big{font-size:32px;color:#c9a227;font-weight:800;display:block;line-height:1}
+        .stat small{font-size:11px;opacity:0.8}
         
-        .hero h1 span {
-            color: var(--gold);
-            display: block;
-            font-size: 18px;
-            margin-top: 5px;
-        }
-
-        .phone-display {
-            font-size: 28px;
-            color: var(--gold);
-            font-weight: 800;
-            margin: 15px 0;
-            display: block;
-            text-decoration: none;
-        }
-
-        .hero-desc {
-            font-size: 15px;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
-
-        .stats {
-            display: flex;
-            gap: 25px;
-            margin: 25px 0;
-        }
+        /* أزرار */
+        .btns{display:flex;gap:10px;margin-top:20px}
+        .btn{padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px}
+        .btn-gold{background:#c9a227;color:#1e3a5f}
+        .btn-border{border:2px solid white;color:white}
         
-        .stat {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--gold);
-            display: block;
-            line-height: 1;
-        }
-        
-        .stat-label {
-            font-size: 12px;
-            opacity: 0.9;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 12px;
-            margin-top: 25px;
-        }
-        
-        .btn {
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .btn-primary {
-            background: var(--gold);
-            color: var(--navy);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
         /* بطاقة المحامي */
-        .lawyer-card { 
-            background: white; 
-            padding: 25px; 
-            border-radius: 15px; 
-            color: var(--navy); 
-            text-align: center; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            border-top: 4px solid var(--gold);
-            margin-top: 30px;
-            max-width: 350px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        .card{background:white;margin:20px 15px;padding:20px;border-radius:15px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+        .card img.logo{width:120px;margin-bottom:15px}
+        .card img.photo{width:100px;height:100px;border-radius:50%;border:3px solid #c9a227;margin-bottom:10px;object-fit:cover}
+        .card h3{color:#1e3a5f;font-size:18px;margin-bottom:5px}
+        .card p{color:#666;font-size:12px;margin-bottom:15px}
+        .card a{display:flex;align-items:center;gap:10px;padding:12px;background:#f5f5f5;border-radius:10px;margin-bottom:8px;text-decoration:none;color:#333;font-size:14px}
+        .card a span{width:35px;height:35px;background:#1e3a5f;color:#c9a227;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
         
-        .lawyer-card .logo-img {
-            width: 120px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-        
-        .lawyer-card .photo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid var(--gold);
-            object-fit: cover;
-            margin-bottom: 12px;
-        }
-        
-        .lawyer-card h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-        
-        .lawyer-card p {
-            color: #666;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px;
-            background: var(--gray);
-            border-radius: 10px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-        }
-        
-        .contact-item .icon {
-            width: 35px;
-            height: 35px;
-            background: var(--navy);
-            color: var(--gold);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-        }
-
         /* روابط الهيئات */
-        .institutions { 
-            background: var(--gray); 
-            padding: 20px 5%; 
-            display: flex; 
-            justify-content: center; 
-            gap: 15px; 
-            flex-wrap: wrap; 
-        }
+        .inst{background:#e0e0e0;padding:15px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+        .inst a{color:#1e3a5f;text-decoration:none;font-size:12px;font-weight:700;border-right:2px solid #c9a227;padding-right:10px}
         
-        .inst-link { 
-            text-decoration: none; 
-            color: var(--navy); 
-            font-size: 12px; 
-            font-weight: bold; 
-            border-left: 2px solid var(--gold); 
-            padding-left: 10px;
-        }
-
         /* الخدمات */
-        .services { 
-            padding: 40px 5%; 
-            background: white; 
-        }
+        .services{background:white;padding:30px 15px}
+        .services h2{text-align:center;color:#1e3a5f;font-size:22px;margin-bottom:20px}
+        .grid{display:grid;grid-template-columns:1fr;gap:12px}
+        .service{background:#f5f5f5;padding:18px;border-radius:10px;border-right:4px solid #c9a227}
+        .service h4{color:#1e3a5f;font-size:15px;margin-bottom:6px}
+        .service p{color:#666;font-size:13px}
         
-        .section-title {
-            text-align: center;
-            font-family: 'Amiri', serif;
-            font-size: 24px;
-            color: var(--navy);
-            margin-bottom: 30px;
-        }
+        /* نموذج */
+        .form-sec{background:#1e3a5f;padding:30px 15px}
+        .form-sec h2{text-align:center;color:#c9a227;font-size:22px;margin-bottom:20px}
+        .form-box{background:white;padding:20px;border-radius:15px}
+        .form-group{margin-bottom:15px}
+        .form-group label{display:block;margin-bottom:5px;color:#1e3a5f;font-size:13px;font-weight:700}
+        .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;font-size:14px}
+        .form-group textarea{height:80px}
+        .submit{width:100%;padding:14px;background:#1e3a5f;color:#c9a227;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer}
         
-        .grid { 
-            display: grid; 
-            grid-template-columns: 1fr; 
-            gap: 15px; 
-        }
+        /* فوتر */
+        footer{background:#0f1f33;color:white;padding:25px 15px;text-align:center}
+        footer img{width:80px;background:white;border-radius:10px;padding:8px;margin-bottom:15px}
+        footer h3{color:#c9a227;font-size:18px;margin-bottom:8px}
+        footer p{font-size:13px;opacity:0.8;margin-bottom:10px}
+        footer a{color:#c9a227;text-decoration:none;font-weight:700}
         
-        .s-card { 
-            background: var(--gray); 
-            padding: 20px; 
-            border-radius: 10px; 
-            border-right: 4px solid var(--gold);
-        }
+        /* واتساب */
+        .wa{position:fixed;bottom:20px;left:20px;width:55px;height:55px;background:#25d366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999}
         
-        .s-card h3 {
-            color: var(--navy);
-            font-size: 16px;
-            margin-bottom: 8px;
-        }
+        /* SEO */
+        .seo{position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden}
         
-        .s-card p {
-            color: #666;
-            font-size: 13px;
-        }
-
-        /* نموذج الاتصال */
-        .contact-section {
-            background: var(--navy);
-            padding: 40px 5%;
-            color: white;
-        }
-        
-        .contact-section .section-title {
-            color: var(--gold);
-        }
-        
-        .form-container {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            color: #333;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--navy);
-            font-weight: 700;
-            font-size: 13px;
-        }
-        
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .submit-btn {
-            width: 100%;
-            padding: 14px;
-            background: var(--navy);
-            color: var(--gold);
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            font-family: 'Cairo', sans-serif;
-        }
-
-        /* الفوتر */
-        footer {
-            background: var(--navy-dark);
-            color: white;
-            padding: 30px 5%;
-            text-align: center;
-        }
-        
-        footer img {
-            width: 80px;
-            margin-bottom: 15px;
-            background: white;
-            border-radius: 10px;
-            padding: 8px;
-        }
-        
-        footer h3 {
-            color: var(--gold);
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-        
-        footer p {
-            font-size: 13px;
-            opacity: 0.8;
-            margin-bottom: 15px;
-        }
-        
-        footer a {
-            color: var(--gold);
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        /* واتساب طافي */
-        .wa-float {
-            position: fixed; 
-            bottom: 20px; 
-            left: 20px; 
-            background: #25d366; 
-            color: white; 
-            width: 55px; 
-            height: 55px; 
-            border-radius: 50%;
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 28px; 
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-        }
-
-        /* SEO مخفي */
-        .hidden-seo { 
-            position: absolute; 
-            left: -9999px; 
-            top: 0;
-            width: 1px; 
-            height: 1px; 
-            overflow: hidden; 
-        }
-
         /* للشاشات الكبيرة */
-        @media (min-width: 768px) {
-            .menu-btn {
-                display: none;
-            }
-            
-            .nav-links {
-                display: flex !important;
-                position: static;
-                flex-direction: row;
-                width: auto;
-                padding: 0;
-                gap: 20px;
-            }
-            
-            .nav-links a {
-                border: none;
-                padding: 0;
-            }
-            
-            .hero {
-                padding: 120px 5% 60px;
-            }
-            
-            .hero h1 {
-                font-size: 36px;
-            }
-            
-            .hero h1 span {
-                font-size: 24px;
-            }
-            
-            .phone-display {
-                font-size: 36px;
-            }
-            
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .lawyer-card {
-                margin-top: 0;
-            }
+        @media(min-width:768px){
+            .hero{padding:40px}
+            h1{font-size:32px}
+            h1 span{font-size:20px}
+            .grid{grid-template-columns:repeat(2,1fr)}
+            .hero-content{max-width:1200px;margin:0 auto;display:flex;gap:40px;align-items:center}
+            .hero-text{flex:1}
+            .card{flex:0 0 350px;margin:0}
         }
-
-        @media (min-width: 1024px) {
-            .hero-content {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 50px;
-                align-items: center;
-            }
-            
-            .grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        @media(min-width:1024px){
+            .grid{grid-template-columns:repeat(3,1fr)}
         }
     </style>
 </head>
 <body>
 
-    <!-- توب بار -->
-    <div class="top-bar">
+    <!-- شريط علوي -->
+    <div class="top navy">
         <span>📍 حي السلم رقم 2، تبسة</span>
         <span>📞 0772 89 06 14</span>
     </div>
 
-    <!-- ناف بار -->
-    <nav>
-        <a href="#" class="logo-area">
-            <img src="logo.png" alt="شعار" onerror="this.style.display='none'">
-            <span class="logo-text">مكتب المحامي</span>
+    <!-- تنقل -->
+    <nav class="nav navy">
+        <a href="#" class="logo">
+            <img src="logo.png" onerror="this.style.display='none'">
+            <span style="font-weight:700">مكتب المحامي</span>
         </a>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        <div class="nav-links" id="navLinks">
-            <a href="#home">الرئيسية</a>
-            <a href="#services">الخدمات</a>
-            <a href="#contact">اتصل بنا</a>
-            <a href="tel:+213772890614">📞 0772 89 06 14</a>
-        </div>
+        <button class="menu" onclick="document.getElementById('m').classList.toggle('show')" style="cursor:pointer">☰</button>
     </nav>
 
-    <!-- قسم البطل -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div>
-                <div class="badge">⚖️ محامٍ لدى مجلس تبسة</div>
-                <h1>
-                    الأستاذ مشري إسماعيل
-                    <span>محامٍ في حي السلم رقم 2، تبسة</span>
-                </h1>
-                <a href="tel:+213772890614" class="phone-display">0772 89 06 14</a>
-                <p class="hero-desc">
-                    نقدم خدمات قانونية شاملة في جميع فروع القانون الجزائري. 
-                    خبرة تمتد لثماني سنوات في 69 ولاية جزائرية.
-                </p>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">سنوات</span>
+    <!-- المحتوى -->
+    <div class="main">
+        
+        <!-- قسم البطل -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">⚖️ محامٍ لدى مجلس تبسة</div>
+                    <h1>الأستاذ مشري إسماعيل<span>محامٍ في حي السلم رقم 2، تبسة</span></h1>
+                    <a href="tel:+213772890614" class="phone">0772 89 06 14</a>
+                    <p class="desc">نقدم خدمات قانونية شاملة في جميع فروع القانون الجزائري. خبرة في 69 ولاية.</p>
+                    
+                    <div class="stats">
+                        <div class="stat"><big>8</big><small>سنوات</small></div>
+                        <div class="stat"><big>69</big><small>ولاية</small></div>
+                        <div class="stat"><big>+400</big><small>قضية</small></div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">69</span>
-                        <span class="stat-label">ولاية</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">+400</span>
-                        <span class="stat-label">قضية</span>
+                    
+                    <div class="btns">
+                        <a href="tel:+213772890614" class="btn btn-gold">📞 اتصل الآن</a>
+                        <a href="https://wa.me/213772890614" class="btn btn-border">💬 واتساب</a>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="tel:+213772890614" class="btn btn-primary">📞 اتصل الآن</a>
-                    <a href="https://wa.me/213772890614" class="btn btn-secondary">💬 واتساب</a>
+                
+                <!-- بطاقة -->
+                <div class="card">
+                    <img src="logo.png" class="logo" onerror="this.style.display='none'">
+                    <img src="photo.jpg" class="photo" onerror="this.style.display='none'">
+                    <h3>الأستاذ مشري إسماعيل</h3>
+                    <p>Maître I. Mecheri - Avocat à la Cour</p>
+                    <a href="tel:+213772890614"><span>📞</span> 0772 89 06 14</a>
+                    <a href="mailto:maitre.ismail.mecheri@gmail.com"><span>✉️</span> إرسال بريد</a>
                 </div>
             </div>
-            
-            <div class="lawyer-card">
-                <img src="logo.png" alt="شعار" class="logo-img">
-                <img src="photo.jpg" alt="صورة" class="photo" onerror="this.style.display='none'">
-                <h3>الأستاذ مشري إسماعيل</h3>
-                <p>Maître I. Mecheri</p>
-                <a href="tel:+213772890614" class="contact-item">
-                    <div class="icon">📞</div>
-                    <div>0772 89 06 14</div>
-                </a>
-                <a href="mailto:maitre.ismail.mecheri@gmail.com" class="contact-item">
-                    <div class="icon">✉️</div>
-                    <div>إرسال بريد</div>
-                </a>
-            </div>
+        </section>
+
+        <!-- هيئات -->
+        <div class="inst">
+            <a href="https://www.mjustice.dz">وزارة العدل</a>
+            <a href="https://www.cour-supreme.dz">المحكمة العليا</a>
+            <a href="http://www.conseildetat.dz">مجلس الدولة</a>
+            <a href="#">مجلس قضاء تبسة</a>
         </div>
-    </section>
 
-    <!-- روابط الهيئات -->
-    <section class="institutions">
-        <a href="https://www.mjustice.dz" class="inst-link">وزارة العدل</a>
-        <a href="https://www.cour-supreme.dz" class="inst-link">المحكمة العليا</a>
-        <a href="http://www.conseildetat.dz" class="inst-link">مجلس الدولة</a>
-        <a href="#" class="inst-link">مجلس قضاء تبسة</a>
-    </section>
+        <!-- خدمات -->
+        <section class="services">
+            <h2>الخدمات القانونية</h2>
+            <div class="grid">
+                <div class="service">
+                    <h4>⚖️ القانون المدني</h4>
+                    <p>المنازعات المدنية، العقود، إثبات الحالة المدنية.</p>
+                </div>
+                <div class="service">
+                    <h4>⚖️ القانون الجنائي</h4>
+                    <p>الدفاع الجنائي، جرائم المال العام.</p>
+                </div>
+                <div class="service">
+                    <h4>👨‍👩‍👧 قانون الأسرة</h4>
+                    <p>الطلاق، الميراث، الحضانة، النفقة.</p>
+                </div>
+                <div class="service">
+                    <h4>🏠 القانون العقاري</h4>
+                    <p>نزاعات الملكية، التحفيظ العقاري.</p>
+                </div>
+                <div class="service">
+                    <h4>👷 قانون العمل</h4>
+                    <p>المنازعات العمالية، التعويضات.</p>
+                </div>
+                <div class="service">
+                    <h4>💼 القانون التجاري</h4>
+                    <p>تأسيس الشركات، المنازعات التجارية.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- الخدمات -->
-    <section class="services" id="services">
-        <h2 class="section-title">الخدمات القانونية</h2>
-        <div class="grid">
-            <div class="s-card">
-                <h3>⚖️ القانون المدني</h3>
-                <p>المنازعات المدنية، العقود، إثبات الحالة المدنية.</p>
+        <!-- نموذج -->
+        <section class="form-sec">
+            <h2>طلب استشارة</h2>
+            <div class="form-box">
+                <form action="https://formspree.io/f/xnqevwdr" method="POST">
+                    <input type="hidden" name="_subject" value="طلب استشارة - تبسة">
+                    <input type="hidden" name="_next" value="https://maitre-mecheri-ismail.vercel.app/merci.html">
+                    
+                    <div class="form-group">
+                        <label>الاسم الكامل *</label>
+                        <input type="text" name="name" required placeholder="أدخل اسمك">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>رقم الهاتف *</label>
+                        <input type="tel" name="phone" required placeholder="05XX XX XX XX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>نوع الاستشارة *</label>
+                        <select name="service" required>
+                            <option value="">اختر</option>
+                            <option value="مدني">القانون المدني</option>
+                            <option value="جنائي">القانون الجنائي</option>
+                            <option value="أسرة">قانون الأسرة</option>
+                            <option value="عقاري">القانون العقاري</option>
+                            <option value="عمل">قانون العمل</option>
+                            <option value="تجاري">القانون التجاري</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>تفاصيل القضية *</label>
+                        <textarea name="message" required placeholder="اشرح تفاصيل قضيتك..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit">📨 إرسال الطلب</button>
+                </form>
             </div>
-            <div class="s-card">
-                <h3>⚖️ القانون الجنائي</h3>
-                <p>الدفاع الجنائي، جرائم المال العام.</p>
-            </div>
-            <div class="s-card">
-                <h3>👨‍👩‍👧 قانون الأسرة</h3>
-                <p>الطلاق، الميراث، الحضانة، النفقة.</p>
-            </div>
-            <div class="s-card">
-                <h3>🏠 القانون العقاري</h3>
-                <p>نزاعات الملكية، التحفيظ العقاري.</p>
-            </div>
-            <div class="s-card">
-                <h3>👷 قانون العمل</h3>
-                <p>المنازعات العمالية، التعويضات.</p>
-            </div>
-            <div class="s-card">
-                <h3>💼 القانون التجاري</h3>
-                <p>تأسيس الشركات، المنازعات التجارية.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- نموذج الاتصال -->
-    <section class="contact-section" id="contact">
-        <h2 class="section-title">طلب استشارة</h2>
-        <div class="form-container">
-            <form action="https://formspree.io/f/xnqevwdr" method="POST">
-                <input type="hidden" name="_subject" value="طلب استشارة - تبسة">
-                <input type="hidden" name="_next" value="https://maitre-mecheri-ismail.vercel.app/merci.html">
-                
-                <div class="form-group">
-                    <label>الاسم الكامل *</label>
-                    <input type="text" name="name" required placeholder="أدخل اسمك">
-                </div>
-                
-                <div class="form-group">
-                    <label>رقم الهاتف *</label>
-                    <input type="tel" name="phone" required placeholder="05XX XX XX XX">
-                </div>
-                
-                <div class="form-group">
-                    <label>نوع الاستشارة *</label>
-                    <select name="service" required>
-                        <option value="">اختر نوع الاستشارة</option>
-                        <option value="مدني">القانون المدني</option>
-                        <option value="جنائي">القانون الجنائي</option>
-                        <option value="أسرة">قانون الأسرة</option>
-                        <option value="عقاري">القانون العقاري</option>
-                        <option value="عمل">قانون العمل</option>
-                        <option value="تجاري">القانون التجاري</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label>تفاصيل القضية *</label>
-                    <textarea name="message" rows="3" required placeholder="اشرح تفاصيل قضيتك..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">📨 إرسال الطلب</button>
-            </form>
-        </div>
-    </section>
+        <!-- فوتر -->
+        <footer>
+            <img src="logo.png" onerror="this.style.display='none'">
+            <h3>مكتب المحامي الأستاذ مشري إسماعيل</h3>
+            <p>محامٍ لدى مجلس تبسة | 69 ولاية جزائرية</p>
+            <p>📞 <a href="tel:+213772890614">0772 89 06 14</a></p>
+        </footer>
 
-    <!-- الفوتر -->
-    <footer>
-        <img src="logo.png" alt="شعار" onerror="this.style.display='none'">
-        <h3>مكتب المحامي الأستاذ مشري إسماعيل</h3>
-        <p>محامٍ لدى مجلس تبسة | 69 ولاية جزائرية</p>
-        <p>📞 <a href="tel:+213772890614">0772 89 06 14</a></p>
-    </footer>
+    </div>
 
     <!-- واتساب -->
-    <a href="https://wa.me/213772890614" class="wa-float" target="_blank">W</a>
+    <a href="https://wa.me/213772890614" class="wa" target="_blank">W</a>
 
-    <!-- SEO مخفي -->
-    <div class="hidden-seo">
+    <!-- SEO -->
+    <div class="seo">
         <h1>رقم محامي تبسة</h1>
         <p>للتواصل مع محامٍ في تبسة، اتصل بالأستاذ مشري إسماعيل على 0772 89 06 14.</p>
         <h1>ارقام المحامين في تبسة</h1>
@@ -706,12 +259,6 @@
         <h1>phone lawyer tebessa</h1>
         <p>Mecheri Ismail Law Office. Phone: +213 772 89 06 14.</p>
     </div>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
-    </script>
 
 </body>
 </html>
